@@ -6,15 +6,16 @@ export class PotProgressBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentAmount: props.currentAmount, goal: props.goal,
-      style: {height: '0px'}
+      currentAmount: parseFloat(props.currentAmount), goal: parseFloat(props.goal),
+      style: { height: '0px', backgroundColor: '#f380aa' }
     }
   }
 
   calculateCompletionPercentage() {
-    var amount = parseFloat(this.state.currentAmount);
-    var goal = parseFloat(this.state.goal);
+    var amount = this.state.currentAmount;
+    var goal = this.state.goal;
     var completionPercentage = ((amount / goal) * 100).toFixed(2);
+    
     return completionPercentage;
   }
 
@@ -24,8 +25,13 @@ export class PotProgressBar extends Component {
 
     var progress = (completionPercentage / 100) * maxHeight;
 
+    var bgColor = "f380aa";
+    if (this.state.currentAmount >= this.state.goal) {
+        bgColor = "#00e285";
+    }
+
     this.setState({
-      style: {height: progress + 'px'}
+      style: { height: progress + 'px', backgroundColor: bgColor }
     })
   }
 

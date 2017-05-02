@@ -4,10 +4,6 @@
   text-align: left;
 }
 
-.pot-list {
-  height: 500px;
-}
-
 .pot-list ul {
   list-style: none;
   -webkit-padding-start: 0px;
@@ -58,7 +54,6 @@
   position: absolute;
   background-color: #f380aa;
   border-radius: 0px 0px 0px 4px;
-  height: 12px;
   width: 8px;
   bottom: 0;
 }

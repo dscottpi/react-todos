@@ -26,10 +26,16 @@ class App extends Component {
           <h2>My Pots</h2>
         </div>
         <Grid>
-          <Row className="show-grid">
-            <Col lg={6} lgOffset={1}>
+          <Row>
+            <Col lg={5} lgOffset={1}>
               <h4 className="pot-list-heading">Active Pots ({this.state.pots.length})</h4>
               <PotList pots={this.state.pots}/>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={5} lgOffset={1}>
+              <h4 className="pot-list-heading">Completed Pots ({this.state.completedPots.length})</h4>
+              <PotList pots={this.state.completedPots} />
             </Col>
           </Row>
         </Grid>
