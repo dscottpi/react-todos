@@ -1,0 +1,72 @@
+.pot-list-heading {
+  color: #c2c6ce;
+  font-weight: bold;
+  text-align: left;
+}
+
+.pot-list {
+  height: 500px;
+}
+
+.pot-list ul {
+  list-style: none;
+  -webkit-padding-start: 0px;
+}
+
+.pot-item {
+  background-color: #FFF;
+  border-radius: 4px;
+  height: 75px;
+  margin-bottom: 18px;
+  text-align: left;
+  -moz-box-shadow:    1px 1px 1px 1px #ccc;
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+  box-shadow:         1px 1px 1px 1px #ccc;
+}
+
+.pot-item-title {
+  padding-left: 20px;
+  padding-top: 12px;
+  color: #133d5e;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pot-item-money {
+  padding-left: 20px;
+  color: #c2c6ce;
+  padding-bottom: 12px;
+}
+
+.pot-item-money span {
+  color: #47b4e7;
+  font-weight: bold;
+}
+
+.pot-progress {
+  position: relative;
+  float: left;
+  background-color: #dee2ea;
+  border-radius: 4px 0px 0px 4px;
+  height: 100%;
+  width: 8px;
+  left: 0;
+  top: 0;
+}
+
+.pot-progressbar {
+  position: absolute;
+  background-color: #f380aa;
+  border-radius: 0px 0px 0px 4px;
+  height: 12px;
+  width: 8px;
+  bottom: 0;
+}
+
+body {
+  background-color: #ecf1f5;
+}
+
+.App-header {
+  background-color: #0282e5;
+}
